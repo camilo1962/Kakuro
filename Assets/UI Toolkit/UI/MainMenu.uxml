@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=964babf8bc0ae404e8fa2c402706a568&amp;type=3#MainMenu" />
+    <ui:VisualElement class="app-root">
+        <ui:VisualElement name="HomePanel" class="screen home-screen">
+            <ui:Image name="MenuLogo" class="menu-logo" />
+            <ui:Label name="MenuTitle" text="Kakuro" class="brand-title" />
+            <ui:Label text="Un reto, una suma a la vez" class="brand-subtitle" />
+            <ui:VisualElement class="home-actions">
+                <ui:Button name="PlayButton" text="Jugar" class="menu-button primary" />
+                <ui:Button name="RulesButton" text="Cómo jugar" class="menu-button secondary" />
+                <ui:Button name="RankingButton" text="Mejores tiempos" class="menu-button secondary" />
+                <ui:Button name="QuitButton" text="Salir" class="menu-button tertiary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RulesPanel" class="screen detail-screen hidden">
+            <ui:Label text="Cómo jugar" class="page-title" />
+            <ui:Label text="Reglas y consejos" class="page-subtitle" />
+            <ui:ScrollView name="RulesContent" class="content-scroll" />
+            <ui:Button name="RulesBackButton" text="Volver al menú" class="back-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RankingPanel" class="screen detail-screen hidden">
+            <ui:Label name="RankingTitle" text="Mejores tiempos" class="page-title ranking-title" />
+            <ui:Label name="RankingSubtitle" text="Top 8 por dificultad" class="page-subtitle ranking-subtitle" />
+            <ui:VisualElement class="ranking-tabs">
+                <ui:Button name="RankEasyButton" text="Fácil" class="tab-button" />
+                <ui:Button name="RankMediumButton" text="Medio" class="tab-button" />
+                <ui:Button name="RankHardButton" text="Difícil" class="tab-button" />
+            </ui:VisualElement>
+            <ui:ScrollView name="RankingContent" class="content-scroll" />
+            <ui:Button name="RankingBackButton" text="Volver al menú" class="back-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
